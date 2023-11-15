@@ -8,7 +8,7 @@ from createModel import create_mlp_model
 from joblib import load
 
 # Load your Keras model
-model_path = 'best_model.joblib'
+model_path = 'best_model.plk'
 
 
 with open(model_path, 'rb') as f:
