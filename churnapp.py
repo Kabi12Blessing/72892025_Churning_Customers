@@ -1,12 +1,14 @@
 import streamlit as st
-import joblib
+from sklearn.preprocessing import LabelEncoder
+import tensorflow as tf
 import numpy as np
+import pickle
 import pandas as pd
-from tensorflow.keras.models import load_model
-from sklearn.preprocessing import StandardScaler
+from create_model import create_model
+from joblib import load
 
 # Load your Keras model
-model_path = "best_model.joblib"
+model_path = 'best_model.joblib'
 
 from joblib import load
 
@@ -19,12 +21,12 @@ best_model = load(model_path)
 
 
 # Load the scalers
-num_features_scaler_path = "scaler_model.joblib"
+num_features_scaler_path = 'scaler_model.joblib'
 
 
 num_features_scaler = joblib.load(num_features_scaler_path)
 
-label_path= "label_encoder.joblib"
+label_path= 'label_encoder.joblib'
 label_encoder = load(label_path)
 st.title("Neural network model using TensorFlow's Keras API for Churn prediction")
 
