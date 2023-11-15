@@ -10,15 +10,8 @@ from joblib import load
 # Load your Keras model
 model_path = 'best_model.joblib'
 
-from joblib import load
-
-
 # Load the model from the saved file
 best_model = load(model_path)
-
-# You can use loaded_model for predictions
-
-
 
 # Load the scalers
 num_features_scaler_path = 'scaler_model.joblib'
