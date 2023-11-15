@@ -10,8 +10,9 @@ from joblib import load
 # Load your Keras model
 model_path = 'best_model.joblib'
 
-# Load the model from the saved file
-best_model = load(model_path)
+
+with open(model_path, 'rb') as f:
+    best_model= pickle.load(f)
 
 # Load the scalers
 num_features_scaler_path = 'scaler_model.joblib'
