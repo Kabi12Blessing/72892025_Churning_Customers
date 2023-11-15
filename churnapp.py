@@ -17,7 +17,6 @@ with open(model_path, 'rb') as f:
 # Load the scalers
 num_features_scaler_path = 'scaler_model.joblib'
 
-
 num_features_scaler = joblib.load(num_features_scaler_path)
 
 label_path= 'label_encoder.joblib'
