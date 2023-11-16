@@ -9,7 +9,7 @@ from createModel import create_mlp_model
 from joblib import load
 
 # Load your Keras model
-model_path = 'best_model.plk'
+model_path = 'Nbest_model.plk'
 
 
 with open(model_path, 'rb') as f:
@@ -66,7 +66,7 @@ def main():
         predicted_churn = label_mapping[predicted_churn_label]
         st.write(f"Predicted Churn: {predicted_churn}")
 
-        auc = best_model.auc # Replace 'auc' with the attribute name containing the AUC
+        auc_score= best_model.auc # Replace 'auc' with the attribute name containing the AUC
         st.write(f"Model Accuracy: {auc}")
 
 if __name__ == "__main__":
