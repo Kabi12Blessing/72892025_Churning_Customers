@@ -22,7 +22,7 @@ num_features_scaler = joblib.load(num_features_scaler_path)
 
 label_path= 'label_encoder.joblib'
 label_encoder = load(label_path)
-st.title("Neural network model using TensorFlow's Keras API for Churn prediction")
+st.title("Churn prediction")
 
 def main():
     tenure = st.number_input('Tenure', min_value=0)
