@@ -8,6 +8,17 @@ import pandas as pd
 from createModel import create_mlp_model
 from joblib import load
 
+
+import streamlit as st
+
+# Set the page configuration
+st.set_page_config(
+    page_title="Churn prediction",
+    page_icon=":smiley:",
+    layout="wide",  # Change the layout to "wide" if desired
+    initial_sidebar_state="expanded",  # Change sidebar state if desired
+)
+
 # Load your Keras model
 model_path = 'Nbest_model.plk'
 
