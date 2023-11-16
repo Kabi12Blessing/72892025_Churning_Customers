@@ -69,6 +69,7 @@ def main():
         with open('auc_score.txt', 'r') as f:
             auc_score_text = f.read()
 
+        st.write(f"Accuracy of the model:")
         st.write(auc_score_text)
 if __name__ == "__main__":
     main()
