@@ -65,7 +65,9 @@ def main():
         predicted_churn_label = int(prediction[0])
         predicted_churn = label_mapping[predicted_churn_label]
         st.write(f"Predicted Churn: {predicted_churn}")
-        st.write(f"Accuracy of the pretrained model: {best_model.accuracy}")
+
+        auc = best_model.auc_score # Replace 'auc' with the attribute name containing the AUC
+        st.write(f"Model Accuracy: {auc}")
 
 if __name__ == "__main__":
     main()
