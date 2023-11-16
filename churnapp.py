@@ -66,9 +66,7 @@ def main():
         predicted_churn = label_mapping[predicted_churn_label]
         st.write(f"Predicted Churn: {predicted_churn}")
 
-        best_model.accuracy = accuracy
-        st.write("Model accuracy:")
-        st.text(accuracy)
+         st.write(f"Accuracy of the pretrained model: {best_model.accuracy}")
 
 if __name__ == "__main__":
     main()
