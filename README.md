@@ -20,10 +20,10 @@ Follow these steps to install and run the churn prediction model on your local s
 
 Run the application using: python churnapp.py
 
-# Link to video
+# Link to video demo
 https://youtu.be/vDZYtjLS7BM
 
-# Link to my streamlitapp
+# Link to my streamlitapp 
 https://churning-ngce4growsg2pljj6cmtwf.streamlit.app/
 
 
