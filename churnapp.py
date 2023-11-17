@@ -15,8 +15,8 @@ import streamlit as st
 st.set_page_config(
     page_title="Churn prediction",
     page_icon=":smiley:",
-    layout="wide",  # Change the layout to "wide" if desired
-    initial_sidebar_state="expanded",  # Change sidebar state if desired
+    layout="wide", 
+    initial_sidebar_state="expanded",  
 )
 
 # Load your Keras model
@@ -41,8 +41,8 @@ def main():
     total_charges = st.number_input('Total Charges', min_value=0.0)
     online_security = st.selectbox('Online Security', ['Yes', 'No', 'No internet service'])
     tech_support = st.selectbox('Tech Support', ['Yes', 'No', 'No internet service'])
-    payment_method_selection = st.selectbox('Select Payment Method', ['Electronic check', 'Mailed check', 'Bank transfer'])  # Replace with actual options
-    internet_service_selection = st.selectbox('Select Internet Service', ['DSL', 'Fiber optic'])  # Replace with actual options
+    payment_method_selection = st.selectbox('Select Payment Method', ['Electronic check', 'Mailed check', 'Bank transfer'])  
+    internet_service_selection = st.selectbox('Select Internet Service', ['DSL', 'Fiber optic'])  
 
     if st.button("Predict"):
     # Define your categorical columns here
